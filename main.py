@@ -54,6 +54,8 @@ def all():
         error_email = "Error: Email must be between 3 and 20 characters."
         email = ""
         
+    
+    
     if not error_username and not error_password and not error_verify and not error_email:
         return render_template("welcome.html", username=username)
     else:    
